@@ -17,7 +17,7 @@ import os
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-rootFolder = '/Users/david/DEVS_LOCAL/dev-ia-son/partage-ia-son/data/'
+rootFolder = '/Users/fredericayme/OneDrive/Documents/Projet -Indep/The Datascientest/Projet Son/Data/'
 # rootFolder = 'data/'
 
 # list_datasets = ['fan', 'pump', 'ToyCar', 'slider', 'ToyConveyor', 'valve']  # folders in rootFolder

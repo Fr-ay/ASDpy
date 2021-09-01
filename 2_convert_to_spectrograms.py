@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+        # -*- coding: utf-8 -*-
 """
     Convert wav to spectrograms
 """
@@ -40,16 +40,16 @@ sets = ['train', 'test']
 for machine in machines:
     for s in sets:
         # example : '../data/fan/train/'
-        soundFolder = '../data/'+machine+'/'+s+'/'
+        soundFolder = '/Users/fredericayme/OneDrive/Documents/Projet -Indep/The Datascientest/Projet Son/Data/'+machine+'/'+s+'/'
 
         # example : '../data/fan/train_png/'
-        imageFolder = '../data/'+machine+'/'+s+'_png/'
+        imageFolder = '/Users/fredericayme/OneDrive/Documents/Projet -Indep/The Datascientest/Projet Son/Data/'+machine+'/'+s+'_png/'
 
         print("Convert directory ", soundFolder)
 
         convertSound2ImageDir(soundFolder, imageFolder)
 
-    
+        
 # test 1 file ok:
 # s1 = SoundFile('./fan/train_mini/normal_id_00_00000001.wav', out_folder_png)
 # s1.exportMelSpectrogram()
