@@ -32,6 +32,8 @@ def convertImageInArray(imageFolder, ArrayFolder):
             continue
 
         img= Image.open(imageFolder+f)
+        if img.size != (313,128):
+            img= img.resize((313,128))
         img_array= np.array(img)
         filename=ArrayFolder+f[:-4]+'.txt'
         np.savetxt(filename,img_array.astype(int), fmt='%i', delimiter=",")
